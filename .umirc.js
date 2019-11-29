@@ -1,16 +1,10 @@
 
 // ref: https://umijs.org/config/
 export default {
+  history: 'hash',
   treeShaking: true,
-  routes: [
-    {
-      path: '/',
-      component: '../layouts/index',
-      routes: [
-        { path: '/', component: '../pages/index' }
-      ]
-    }
-  ],
+  disableCSSModules:true,
+  disableCSSSourceMap:true,  
   plugins: [
     // ref: https://umijs.org/plugin/umi-plugin-react.html
     ['umi-plugin-react', {
