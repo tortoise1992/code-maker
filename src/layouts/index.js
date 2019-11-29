@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { Layout, Menu, Breadcrumb, Icon } from 'antd';
+import { Layout, Menu, Icon } from 'antd';
 
 const { Header, Content, Sider } = Layout;
 const { SubMenu } = Menu;
@@ -62,12 +62,12 @@ class BasicLayout extends React.Component {
 				</Sider>
 				<Layout>
 					<Header style={{ background: '#fff', padding: 0 }} />
-					<Content style={{ margin: '0 16px' }}>
-						<Breadcrumb style={{ margin: '16px 0' }}>
+					<Content style={{ padding:20 }}>
+						{/* <Breadcrumb style={{ margin: '16px 0' }}>
 							<Breadcrumb.Item>User</Breadcrumb.Item>
 							<Breadcrumb.Item>Bill</Breadcrumb.Item>
-						</Breadcrumb>
-						<div style={{ padding: 24, background: '#fff', minHeight: 360 }}>
+						</Breadcrumb> */}
+						<div>
 							{
 								this.props.children
 							}
